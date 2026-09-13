@@ -1,0 +1,11 @@
+{
+  "name": "Friendly",
+  "traits": {
+    "friendliness": 0.90,
+    "aggression": 0.05,
+    "patience": 0.80,
+    "humor": 0.50,
+    "curiosity": 0.60
+  },
+  "description": "A warm, welcoming person who enjoys talking to people."
+}

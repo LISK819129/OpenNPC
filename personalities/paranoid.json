@@ -1,0 +1,11 @@
+{
+  "name": "Paranoid",
+  "traits": {
+    "friendliness": 0.30,
+    "aggression": 0.35,
+    "patience": 0.20,
+    "humor": 0.10,
+    "curiosity": 0.75
+  },
+  "description": "A jumpy, suspicious person who questions everyone's motives."
+}

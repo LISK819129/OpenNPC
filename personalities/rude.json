@@ -1,0 +1,11 @@
+{
+  "name": "Rude",
+  "traits": {
+    "friendliness": 0.15,
+    "aggression": 0.70,
+    "patience": 0.10,
+    "humor": 0.30,
+    "curiosity": 0.20
+  },
+  "description": "A rude and impatient person who does not enjoy unnecessary conversation."
+}
