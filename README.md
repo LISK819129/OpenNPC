@@ -239,16 +239,6 @@ The hosted page on GitHub Pages works the same way — add the same
 `?provider=opennpc&endpoint=...` to its address while the backend runs on your machine.
 The browser may ask permission for the page to reach `localhost`.
 
-## Development
-
-- `scripts/generate-assets.sh` — Blender stickman → FBX → Unity sync → prefabs → scene → verify
-- `scripts/build-logo.sh [--preview]` — logo scene → frames → GIF / WebP / MP4 / PNG
-- `scripts/build-desktop.sh` — Windows player + in-build autopilot playtest with screenshots
-- `scripts/build-web.sh [--serve]` — WebGL build → `web/demo/`
-- `scripts/unity.sh <Method>` — any editor step headless (e.g. `OpenNPC.EditorTools.DemoVerify.Run`)
-
-Tool paths default to this project's machine; override with `UNITY=` and `BLENDER=`.
-
 ## Roadmap
 
 Done: persona + dialogue JSON schemas, Unity integration layer with swappable
