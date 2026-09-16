@@ -35,7 +35,9 @@ that answers as each NPC), and the Blender pipeline that produced the whole visu
 > on a laptop GPU. Its limits are measured and documented in [`backend/`](backend/README.md).
 
 ## Demo
-
+<p align="center">
+  <img src="docs/images/demo.gif" width="100%" alt="OpenNPC live demo — talking to an NPC in real time">
+</p>
 <p align="center">
   <img src="docs/images/demo-street.jpg" width="49%" alt="The OpenNPC street, full of stickman NPCs">
   <img src="docs/images/demo-debug-persona.jpg" width="49%" alt="Talking to Daniel with the persona inspector and debug pipeline open">
