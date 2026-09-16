@@ -36,7 +36,7 @@ that answers as each NPC), and the Blender pipeline that produced the whole visu
 
 ## Demo
 <p align="center">
-  <img src="docs/images/demo.gif" width="100%" alt="OpenNPC live demo — talking to an NPC in real time">
+  <img src="docs/images/demo.gif" width="49%" alt="OpenNPC live demo — talking to an NPC in real time">
 </p>
 <p align="center">
   <img src="docs/images/demo-street.jpg" width="49%" alt="The OpenNPC street, full of stickman NPCs">
