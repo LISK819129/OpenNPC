@@ -208,8 +208,7 @@ fallback. Details: [`docs/web-demo.md`](docs/web-demo.md).
 
 ## Installation
 
-You'll need Unity 6000.6 (plus WebGL Build Support for the browser build), Blender 5.2
-(only to regenerate art), Python 3.10+ with Pillow/NumPy (logo media), ffmpeg, and
+You'll need Unity 6000.6 (plus WebGL Build Support for the browser build) and
 Node 18+ (backend stub only).
 
 ```bash
