@@ -204,18 +204,6 @@ Everything configurable lives in one asset: `Assets/OpenNPC/Resources/OpenNPC/Op
 (spawn count, speed range, lanes, interaction radius, dialogue duration, provider, endpoint, debug).
 Details: [`docs/unity-demo.md`](docs/unity-demo.md).
 
-## Blender Assets
-
-Nothing is hand-modelled. [`blender/scripts/build_stickman.py`](blender/scripts/build_stickman.py)
-builds one rigged stickman (14 bones, capsule limbs, inverted-hull rim) with **Idle, Walk,
-Walk_Slow, Walk_Fast, Stop, Turn_Left, Turn_Right, Talk**, and exports the FBX the Unity
-prefab uses. [`build_logo.py`](blender/scripts/build_logo.py) builds the logo scene: 23
-individuals from that one mesh in four depth layers, looping seamlessly in 6 seconds.
-
-<p align="center"><img src="branding/renders/previews/stickman_variation.png" width="90%" alt="Ten NPC variations generated from one base character"></p>
-
-Details: [`docs/blender-pipeline.md`](docs/blender-pipeline.md).
-
 ## Web Demo
 
 [`web/`](web) is a static page: the wordmark with walkers behind it, the Unity WebGL
