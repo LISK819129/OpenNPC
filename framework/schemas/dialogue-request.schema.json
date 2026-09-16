@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/opennpc/opennpc/framework/schemas/dialogue-request.schema.json",
+  "title": "OpenNPC Dialogue Request",
+  "description": "What a game client sends to a dialogue provider. This is the integration boundary between a game engine and the OpenNPC framework.",
+  "type": "object",
+  "required": ["persona", "player_message"],
+  "properties": {
+    "persona": { "$ref": "persona.schema.json" },
+    "context": {
+      "type": "object",
+      "description": "The situation the conversation happens in. All fields optional; engines send what they know.",
+      "properties": {
+        "location": { "type": "string" },
+        "time_of_day": { "type": "string" },
+        "npc_state": { "type": "string" },
+        "npc_mood": { "type": "string" },
+        "nearby": { "type": "array", "items": { "type": "string" } },
+        "session_id": { "type": "string" }
+      }
+    },
+    "conversation": {
+      "type": "array",
+      "description": "Prior turns with THIS NPC, oldest first. The current player_message is not repeated here.",
+      "items": {
+        "type": "object",
+        "required": ["role", "content"],
+        "properties": {
+          "role": { "enum": ["player", "npc"] },
+          "content": { "type": "string" }
+        }
+      }
+    },
+    "player_message": { "type": "string", "minLength": 1 }
+  }
+}

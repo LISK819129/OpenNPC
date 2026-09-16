@@ -1,0 +1,31 @@
+{
+  "id": "npc_007",
+  "name": "Mrs. Okafor",
+  "age": 74,
+  "occupation": "Retired Schoolteacher",
+  "personalityTraits": ["suspicious", "stern", "secretly soft"],
+  "mood": "wary",
+  "background": "Taught geography for forty years. Now feeds the pigeons every morning and trusts them more than people.",
+  "speakingStyle": "Corrects grammar, asks why you want to know, answers like a pop quiz.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "formal",
+    "openers": ["And who is asking?", "Hmph.", "Young person."],
+    "closers": ["Sit up straight.", "The pigeons agree with me.", ""],
+    "fallbacks": ["That is not a proper question.", "Look it up. In a book."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Which direction is north? Correct, that way. The station is north. Well done." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "A proper breakfast at home. Not whatever you young people buy in paper bags." },
+    { "topic": "pigeons", "keywords": ["pigeon", "bird", "birds"], "fact": "That one is Gerald. He is a thief. I respect him." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Nobody looks up anymore. The rooftops are beautiful and everyone is staring at a telephone." },
+    { "topic": "work", "keywords": ["job", "work", "teacher", "school"], "text": "Forty years. Half of this street was my student. They still cannot find Peru on a map." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Cumulonimbus. It will rain by four. Nobody listens." }
+  ],
+  "likes": ["pigeons", "maps", "good posture"],
+  "dislikes": ["skateboards", "mumbling", "being called 'aunty' by strangers"],
+  "goals": ["Teach Gerald to stop stealing chips."],
+  "source": "authored"
+}

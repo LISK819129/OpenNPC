@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenNPC — personality-driven NPC dialogue</title>
+  <meta name="description" content="OpenNPC is an open-source framework for NPCs whose conversations are driven by personality, context, memory and AI/ML models.">
+  <meta property="og:title" content="OpenNPC">
+  <meta property="og:description" content="NPCs aren't just dialogue trees. They're people with personalities.">
+  <meta property="og:image" content="assets/opennpc-social-preview.png">
+  <link rel="preload" href="assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="bar__mark" href="#top">OpenNPC</a>
+  <nav class="bar__nav" aria-label="Sections">
+    <a href="#demo">Demo</a>
+    <a href="#minds">Personas</a>
+    <a href="#pipeline">How it works</a>
+    <a href="https://github.com/LISK819129/OpenNPC" id="repo-link">GitHub</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO: the wordmark with a small population walking behind it -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__stage">
+      <canvas class="hero__crowd" id="crowd" aria-hidden="true"></canvas>
+      <h1 class="hero__title" id="hero-title">OpenNPC</h1>
+    </div>
+    <p class="hero__lede">Personality-driven NPC dialogue.</p>
+    <p class="hero__copy">NPCs aren't just dialogue trees.<br>They're people with personalities.</p>
+    <a class="button" href="#demo" id="hero-play">[ Play demo ]</a>
+  </section>
+
+  <!-- DEMO -->
+  <section class="section" id="demo" aria-labelledby="demo-title">
+    <div class="section__head">
+      <h2 id="demo-title">OpenNPC interactive demo</h2>
+      <p class="mono muted">Unity WebGL · runs in your browser · no API keys · MockDialogueProvider</p>
+    </div>
+
+    <div class="player" id="player" data-state="idle">
+      <canvas class="player__canvas" id="unity-canvas" tabindex="-1" aria-label="OpenNPC Unity demo"></canvas>
+
+      <div class="player__poster" id="poster">
+        <img src="assets/demo-poster.jpg" alt="The OpenNPC street: black stickman NPCs walking past line-drawn shops" loading="lazy">
+        <button class="button button--large" id="play">[ Play demo ]</button>
+        <p class="mono small player__note">Loads the Unity build on click</p>
+      </div>
+
+      <div class="player__loading" id="loading" aria-live="polite">
+        <p class="mono">Loading the street<span class="dots"></span></p>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress">
+          <div class="progress__fill" id="progress-fill"></div>
+        </div>
+        <p class="mono big" id="progress-label">0%</p>
+      </div>
+
+      <div class="player__error" id="error" role="alert">
+        <p class="display">Demo build not found</p>
+        <p class="mono small" id="error-detail">
+          The WebGL build is not in <code>web/demo/Build/</code>. Build it with
+          <code>scripts/build-web.sh</code>, then serve this folder over HTTP
+          (<code>python -m http.server -d web</code>).
+        </p>
+      </div>
+    </div>
+
+    <div class="player__bar">
+      <ul class="keys" aria-label="Controls">
+        <li><kbd>WASD</kbd> / <kbd>Arrows</kbd> Move</li>
+        <li><kbd>E</kbd> Talk</li>
+        <li><kbd>Enter</kbd> Send message</li>
+        <li><kbd>Tab</kbd> Debug</li>
+        <li><kbd>P</kbd> Persona</li>
+        <li><kbd>Esc</kbd> Leave</li>
+      </ul>
+      <button class="button button--small" id="fullscreen" disabled>Fullscreen</button>
+    </div>
+
+    <p class="mono small muted try">
+      Try: walk up to anyone, press <kbd>E</kbd>, type <em>“What do you think about this city?”</em> —
+      then ask someone else the same thing.
+    </p>
+  </section>
+
+  <!-- SAME QUESTION, DIFFERENT MINDS -->
+  <section class="section" id="minds" aria-labelledby="minds-title">
+    <div class="section__head">
+      <h2 id="minds-title">Same question. Different minds.</h2>
+      <p class="mono muted">Real output of the offline <code>MockDialogueProvider</code>, checked by the <code>DemoVerify</code> editor step.</p>
+    </div>
+    <p class="question display">“What do you think about this city?”</p>
+    <ul class="answers" id="answers">
+      <!-- filled from script.js so the data lives in one place -->
+    </ul>
+    <p class="copy">
+      Every NPC has a personality. Every NPC can have different knowledge, moods,
+      memories and speaking styles. The provider reads the persona — the NPC code
+      never changes.
+    </p>
+  </section>
+
+  <!-- PIPELINE -->
+  <section class="section section--split" id="pipeline" aria-labelledby="pipeline-title">
+    <div>
+      <h2 id="pipeline-title">How it works</h2>
+      <ol class="pipeline" aria-label="Dialogue pipeline">
+        <li><span>Persona</span><small>who the NPC is</small></li>
+        <li><span>Context</span><small>where, when, what just happened</small></li>
+        <li class="pipeline__core"><span>OpenNPC</span><small>memory · prompt · policy</small></li>
+        <li><span>Model</span><small>mock, local LLM, hosted API</small></li>
+        <li><span>Response</span><small>text + emotion, back to the NPC</small></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <h3>A persona is data</h3>
+<pre class="code"><code>{
+  "id": "npc_001",
+  "name": "Ravi",
+  "occupation": "Taxi Driver",
+  "personalityTraits": ["impatient", "sarcastic", "helpful"],
+  "mood": "tired",
+  "speakingStyle": "Short sentences and sarcastic remarks.",
+  "likes": ["tea", "old movies"],
+  "dislikes": ["traffic", "small talk"]
+}</code></pre>
+      <h3>A provider is swappable</h3>
+<pre class="code"><code>public interface IDialogueProvider
+{
+    string Name { get; }
+    void Generate(DialogueRequest request,
+                  Action&lt;DialogueResponse&gt; onComplete);
+}</code></pre>
+      <p class="mono small">
+        Mock today. A local model, an OpenAI-compatible server or the OpenNPC
+        backend tomorrow — through a server you control.
+        <strong>API keys never ship in a WebGL build.</strong>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="display">OpenNPC</p>
+  <p class="mono small">A tiny world populated by people with different minds. MIT licensed. Bebas Neue (OFL) · DejaVu Sans Mono.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

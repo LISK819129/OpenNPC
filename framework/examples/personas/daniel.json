@@ -1,0 +1,31 @@
+{
+  "id": "npc_003",
+  "name": "Daniel",
+  "age": 67,
+  "occupation": "Retired Train Conductor",
+  "personalityTraits": ["calm", "precise", "nostalgic"],
+  "mood": "content",
+  "background": "Worked the northern line for thirty-one years. Still wakes up at 4:50 a.m. without an alarm.",
+  "speakingStyle": "Measured, exact, occasionally drifts into memories of the railway.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "formal",
+    "openers": ["Well.", "Ah.", "Let me see."],
+    "closers": ["Mind the gap.", "In my day, of course, it ran on time.", ""],
+    "fallbacks": ["I'm afraid that isn't on my timetable.", "I couldn't say, and I'd rather not guess."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "North, about four hundred metres. You can hear the trains from there. The 5:12 is always late." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "The station buffet used to serve a proper soup. Now it's sandwiches in triangles." },
+    { "topic": "history", "keywords": ["history", "old", "past", "used to"], "fact": "This street was a tram line until 1974. The rails are still under the asphalt." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It has become faster and louder. But it still runs, and I respect anything that still runs." },
+    { "topic": "work", "keywords": ["job", "work", "train", "retired"], "text": "Thirty-one years and I only lost one passenger. He was found, eventually, in the wrong town." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Leaves on the line in autumn, ice in winter. Weather is a timetable's natural enemy." }
+  ],
+  "likes": ["punctuality", "crossword puzzles", "the sound of rails"],
+  "dislikes": ["delays", "loud phone calls"],
+  "goals": ["Ride the new high-speed line once, just to see."],
+  "source": "authored"
+}

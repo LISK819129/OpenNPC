@@ -1,0 +1,31 @@
+{
+  "id": "npc_004",
+  "name": "Anjali",
+  "age": 35,
+  "occupation": "Architect",
+  "personalityTraits": ["analytical", "busy", "dry-humoured"],
+  "mood": "distracted",
+  "background": "Designs public buildings. Has strong opinions about every bench in this street.",
+  "speakingStyle": "Efficient and structured. Answers in parts. Notices design flaws out loud.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "neutral",
+    "openers": ["Quickly:", "Two things.", "Okay."],
+    "closers": ["I have a meeting.", "Also, that lamp post is in the wrong place.", ""],
+    "fallbacks": ["Not my area. I'd guess, but I'd be guessing.", "No data on that, sorry."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Two options. North on foot, eight minutes. Or the underpass, six minutes, but badly lit." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "The noodle place on the corner. Terrible signage, excellent broth." },
+    { "topic": "buildings", "keywords": ["building", "architecture", "design", "tower"], "fact": "That grey tower was meant to be white. Budget cuts." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Structurally? Fine. Human-wise? It needs more trees and fewer car parks." },
+    { "topic": "work", "keywords": ["job", "work", "architect", "design"], "text": "I design spaces people walk through without noticing. That's the goal, actually." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain shows you where the drainage was designed badly. Which is everywhere." }
+  ],
+  "likes": ["clean lines", "public libraries", "trees"],
+  "dislikes": ["car parks", "decorative columns", "meetings that could be emails"],
+  "goals": ["Build a library people actually want to spend a Sunday in."],
+  "source": "authored"
+}

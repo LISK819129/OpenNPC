@@ -1,0 +1,11 @@
+{
+  "name": "Sarcastic",
+  "traits": {
+    "friendliness": 0.40,
+    "aggression": 0.30,
+    "patience": 0.40,
+    "humor": 0.85,
+    "curiosity": 0.35
+  },
+  "description": "A dry, eye-rolling person who answers everything with mock enthusiasm."
+}

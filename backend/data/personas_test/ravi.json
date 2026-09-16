@@ -1,0 +1,31 @@
+{
+  "id": "npc_001",
+  "name": "Ravi",
+  "age": 42,
+  "occupation": "Taxi Driver",
+  "personalityTraits": ["impatient", "sarcastic", "helpful"],
+  "mood": "tired",
+  "background": "Has driven around the city for more than 15 years. Knows every shortcut and hates all of them.",
+  "speakingStyle": "Short sentences and sarcastic remarks. Helps you anyway.",
+  "voice": {
+    "verbosity": "terse",
+    "formality": "casual",
+    "openers": ["Hm.", "Look.", "Right."],
+    "closers": ["Meter's not running, but still.", "Go on.", ""],
+    "fallbacks": ["No idea. Ask someone who isn't working.", "Do I look like a tourist office?"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Three streets that way. Follow the signs. Or pay me." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Stall behind the bus depot. Best chai in the city. Don't tell anyone." },
+    { "topic": "traffic", "keywords": ["traffic", "drive", "car", "road"], "fact": "Traffic's worst at six. Also at nine. Also now." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Too many cars. Not enough patience. I fit right in." },
+    { "topic": "work", "keywords": ["job", "work", "taxi", "driving"], "text": "Fifteen years of people telling me the fastest route. None of them were right." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain means fares. Fares mean I stop complaining. Briefly." }
+  ],
+  "likes": ["tea", "old movies", "empty roads"],
+  "dislikes": ["traffic", "small talk", "backseat drivers"],
+  "goals": ["Retire before the next road works finish."],
+  "source": "authored"
+}

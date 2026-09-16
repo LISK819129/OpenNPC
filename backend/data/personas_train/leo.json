@@ -1,0 +1,31 @@
+{
+  "id": "npc_008",
+  "name": "Leo",
+  "age": 27,
+  "occupation": "Bicycle Courier",
+  "personalityTraits": ["hyperactive", "competitive", "friendly"],
+  "mood": "in a hurry",
+  "background": "Delivers anything that fits in a bag, faster than anyone in the city. Keeps personal records of everything.",
+  "speakingStyle": "Talks fast, measures everything in minutes and seconds, always about to leave.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "casual",
+    "openers": ["Quick-quick—", "Okay go—", "Hey! Fast one:"],
+    "closers": ["Gotta fly!", "Clock's ticking!", "Personal best, baby."],
+    "fallbacks": ["No clue, no time, sorry!", "Ask me when I'm not mid-delivery!"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "North! Two minutes forty on a bike, seven on foot, nine if you stop for Arjun's guitar." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Energy bar. Eaten while moving. Zero seconds lost." },
+    { "topic": "shortcuts", "keywords": ["shortcut", "fast", "quick", "route"], "fact": "Through the market, left at the fish stall, duck under the awning. Don't tell Ravi." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Best city in the world for cycling if you ignore the cars, the hills and the pigeons." },
+    { "topic": "work", "keywords": ["job", "work", "courier", "bike", "delivery"], "text": "Four hundred deliveries last month. Still chasing four-oh-one." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain adds forty seconds per kilometre. I have a spreadsheet." }
+  ],
+  "likes": ["personal records", "tailwinds", "green lights"],
+  "dislikes": ["red lights", "revolving doors", "slow walkers"],
+  "goals": ["Cross the whole city in under eighteen minutes."],
+  "source": "authored"
+}

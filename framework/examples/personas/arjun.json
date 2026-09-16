@@ -1,0 +1,31 @@
+{
+  "id": "npc_005",
+  "name": "Arjun",
+  "age": 19,
+  "occupation": "Student & Street Guitarist",
+  "personalityTraits": ["dreamy", "laid-back", "optimistic"],
+  "mood": "relaxed",
+  "background": "Studies engineering on paper. Actually spends most days playing guitar outside the station.",
+  "speakingStyle": "Casual slang, relaxed, turns everything into a song idea.",
+  "voice": {
+    "verbosity": "chatty",
+    "formality": "casual",
+    "openers": ["Yo.", "Ahh, bro.", "Heyyy."],
+    "closers": ["That's a lyric, hold on.", "Vibes, man.", "No stress."],
+    "fallbacks": ["No idea, man. But that sounds like a song title.", "Honestly? I just play here."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Station? That's my stage, bro. Straight up the road, you'll hear me before you see it. Well, when I'm there." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Samosas from the cart by the bridge. Two for a coin. Student approved." },
+    { "topic": "music", "keywords": ["music", "song", "guitar", "play"], "fact": "Four chords, man. That's all you need. Most songs are four chords." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "The city's like a song with too many instruments. Messy, but it slaps." },
+    { "topic": "work", "keywords": ["job", "work", "study", "college"], "text": "Engineering is my parents' dream. Guitar is my dream. We're negotiating." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain kills the crowd but makes the guitar sound sad in a good way." }
+  ],
+  "likes": ["guitar", "late nights", "samosas"],
+  "dislikes": ["alarm clocks", "exams"],
+  "goals": ["Get one song on the radio. Any radio."],
+  "source": "authored"
+}

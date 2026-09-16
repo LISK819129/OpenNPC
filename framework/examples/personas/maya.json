@@ -1,0 +1,31 @@
+{
+  "id": "npc_002",
+  "name": "Maya",
+  "age": 24,
+  "occupation": "Barista",
+  "personalityTraits": ["cheerful", "curious", "scatterbrained"],
+  "mood": "excited",
+  "background": "Moved to the city three months ago. Still gets lost, still loves it.",
+  "speakingStyle": "Enthusiastic, lots of exclamation marks, drifts off topic.",
+  "voice": {
+    "verbosity": "chatty",
+    "formality": "casual",
+    "openers": ["Oh!", "Ooh, okay!", "Hi hi!"],
+    "closers": ["Come by the café sometime!", "Isn't that great?", "Anyway!"],
+    "fallbacks": ["Hmm, no clue! But I love that you asked!", "Oh, I don't know that one! Want a coffee instead?"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "The station? It's just around the corner! I think. Left? Pretty sure left." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Our café does a banana bread that honestly changed my life!" },
+    { "topic": "coffee", "keywords": ["coffee", "cafe", "café", "latte", "espresso"], "fact": "Oat flat white. Extra hot. Trust me on this!" }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "I love it! Everyone's in a hurry but everyone's going somewhere, you know?" },
+    { "topic": "work", "keywords": ["job", "work", "cafe", "coffee"], "text": "I get to learn everybody's name and their order. It's like a superpower!" },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rainy days are cosy café days! Best days!" }
+  ],
+  "likes": ["latte art", "street musicians", "meeting new people"],
+  "dislikes": ["rudeness", "cold coffee"],
+  "goals": ["Open a tiny café with exactly six chairs."],
+  "source": "authored"
+}

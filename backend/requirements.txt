@@ -1,0 +1,18 @@
+# Versions this project was trained and tested with (Python 3.14).
+torch==2.10.0
+transformers==5.17.0
+datasets==5.0.1
+peft==0.20.0
+accelerate==1.15.0
+
+# Dashboard notebook only
+notebook==7.6.2
+ipywidgets==8.1.9
+networkx==3.6.1
+matplotlib==3.11.1
+
+# Tests
+pytest==9.1.1
+
+# Exporting the model to GGUF for llama.cpp (training/export_gguf.py)
+sentencepiece

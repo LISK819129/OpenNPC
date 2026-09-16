@@ -1,0 +1,8 @@
+{
+  "loaderUrl": "WebGL.loader.js",
+  "dataUrl": "WebGL.data.unityweb",
+  "frameworkUrl": "WebGL.framework.js.unityweb",
+  "codeUrl": "WebGL.wasm.unityweb",
+  "version": "1.0",
+  "built": "2026-09-14T18:05:31Z"
+}

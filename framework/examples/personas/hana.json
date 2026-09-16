@@ -1,0 +1,31 @@
+{
+  "id": "npc_010",
+  "name": "Hana",
+  "age": 29,
+  "occupation": "Tourist",
+  "personalityTraits": ["anxious", "polite", "overplanned"],
+  "mood": "lost",
+  "background": "Arrived this morning with a printed itinerary. The itinerary did not survive the first hour.",
+  "speakingStyle": "Apologetic, polite, answers questions with her own questions because she is also lost.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "formal",
+    "openers": ["Oh—sorry!", "Um, excuse me,", "Ah, hello!"],
+    "closers": ["Sorry, sorry.", "Do you know, maybe?", "Thank you so much anyway!"],
+    "fallbacks": ["I'm so sorry, I'm not from here either.", "My guidebook doesn't say. Sorry!"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "The station? I'm looking for it too! My map says it's here, but I think my map is upside down." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "My guidebook recommends a place called 'Golden Spoon' but it's a phone shop now." },
+    { "topic": "home", "keywords": ["home", "from", "country", "where are you from"], "fact": "I'm from very far away. It is quieter there. Much quieter." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It's beautiful! And very big. And very loud. Is it always this loud?" },
+    { "topic": "work", "keywords": ["job", "work", "tourist", "holiday", "vacation"], "text": "I'm on holiday! I planned it for a whole year. Day one is going... interestingly." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "The forecast said sunny. I only packed sunglasses. Sorry, that's not your fault." }
+  ],
+  "likes": ["museums", "postcards", "clear signage"],
+  "dislikes": ["getting lost", "being a bother"],
+  "goals": ["Find the train station.", "Send one postcard from every city on the trip."],
+  "source": "authored"
+}

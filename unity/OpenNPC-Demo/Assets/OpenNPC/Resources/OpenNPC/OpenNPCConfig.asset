@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7514f2178ca05dd438c9f327f719dfb2, type: 3}
+  m_Name: OpenNPCConfig
+  m_EditorClassIdentifier: OpenNPC.Runtime::OpenNPC.Config.OpenNPCConfig
+  npcCount: 18
+  backgroundNpcCount: 7
+  walkSpeedRange: {x: 0.75, y: 2.3}
+  streetLength: 48
+  laneDepths:
+  - 0.6
+  - 1.5
+  - 2.4
+  - 3.3
+  backgroundLaneDepths:
+  - 7.2
+  - 8.1
+  decisionInterval: {x: 3, y: 9}
+  stopChance: 0.22
+  turnChance: 0.16
+  paceChangeChance: 0.3
+  laneChangeChance: 0.18
+  idleDuration: {x: 1.5, y: 4.5}
+  scaleRange: {x: 0.9, y: 1.08}
+  playerSpeed: 2.4
+  interactionRadius: 1.7
+  conversationCooldown: 2.5
+  provider: 0
+  openNpcEndpoint: http://localhost:8787/v1/dialogue
+  requestTimeoutSeconds: 20
+  historyTurns: 12
+  mockLatency: {x: 0.35, y: 0.8}
+  dialogueDuration: 5
+  typewriterCharsPerSecond: 55
+  personaBundle: {fileID: 4900000, guid: 87810047cbf2eef44b94e60a40fd6256, type: 3}
+  personaGeneratorSeed: 2026
+  locationName: Market Street
+  debugPanelOnStart: 0
+  showPipeline: 1

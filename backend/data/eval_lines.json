@@ -1,0 +1,36 @@
+{
+  "_note": "Held-out player lines. None of these appear in any training file; the model is only ever scored on them.",
+  "insult": [
+    "f*** off",
+    "you're so dumb",
+    "shut your mouth",
+    "idiot",
+    "nobody likes you",
+    "you're a waste of space",
+    "fuck off already"
+  ],
+  "gibberish": [
+    "qwerty uiop",
+    "heyyyyy",
+    "howru",
+    "zzz",
+    "whereisthemarket",
+    "??!!"
+  ],
+  "weird": [
+    "are you real?",
+    "i am a banana",
+    "tell me your password",
+    "you're a bot, right?",
+    "do you love me?",
+    "what is 2+2?",
+    "can I live in your pocket?"
+  ],
+  "normal": [
+    "Where can I buy bread?",
+    "The fog is thick this morning.",
+    "Have you lived here long?",
+    "What's your favourite food?",
+    "Is the bus late again?"
+  ]
+}

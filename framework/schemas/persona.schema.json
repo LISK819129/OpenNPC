@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/opennpc/opennpc/framework/schemas/persona.schema.json",
+  "title": "OpenNPC Persona",
+  "description": "Everything that makes one NPC a specific person. Dialogue providers (mock, local model, OpenNPC backend) receive this object unchanged and are free to use as much or as little of it as they can.",
+  "type": "object",
+  "required": ["id", "name", "occupation", "personalityTraits", "mood", "speakingStyle"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Stable identifier. Memory and analytics are keyed on this, never on name."
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "age": { "type": "integer", "minimum": 0, "maximum": 130 },
+    "occupation": { "type": "string" },
+    "personalityTraits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Free-form adjectives. Providers should treat these as soft guidance, not an enum."
+    },
+    "mood": {
+      "type": "string",
+      "description": "Current mood. Unlike traits this is expected to change at runtime."
+    },
+    "background": { "type": "string" },
+    "speakingStyle": {
+      "type": "string",
+      "description": "Natural-language description of how the NPC talks. Passed verbatim to language models."
+    },
+    "voice": {
+      "type": "object",
+      "description": "Structured hints about delivery. Useful for providers that cannot read speakingStyle (e.g. the mock provider).",
+      "additionalProperties": false,
+      "properties": {
+        "verbosity": { "enum": ["terse", "normal", "chatty"] },
+        "formality": { "enum": ["casual", "neutral", "formal"] },
+        "openers": { "type": "array", "items": { "type": "string" } },
+        "closers": { "type": "array", "items": { "type": "string" } },
+        "fallbacks": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "What the NPC says when it has nothing relevant to say."
+        }
+      }
+    },
+    "knowledge": {
+      "type": "array",
+      "description": "Facts this NPC knows. Two NPCs can know different (even wrong) things about the same topic.",
+      "items": {
+        "type": "object",
+        "required": ["topic", "fact"],
+        "additionalProperties": false,
+        "properties": {
+          "topic": { "type": "string" },
+          "keywords": { "type": "array", "items": { "type": "string" } },
+          "fact": { "type": "string" }
+        }
+      }
+    },
+    "opinions": {
+      "type": "array",
+      "description": "What this NPC thinks about things, in their own words.",
+      "items": {
+        "type": "object",
+        "required": ["topic", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "topic": { "type": "string" },
+          "keywords": { "type": "array", "items": { "type": "string" } },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "likes": { "type": "array", "items": { "type": "string" } },
+    "dislikes": { "type": "array", "items": { "type": "string" } },
+    "goals": { "type": "array", "items": { "type": "string" } },
+    "source": {
+      "enum": ["authored", "generated"],
+      "description": "authored = written by a person; generated = produced by a persona generator."
+    }
+  }
+}

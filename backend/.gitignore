@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Per-user chat data (created when you run the app)
+data/memory_*.json
+data/session_history.txt
+# What players typed to the server: private, review before using as training data.
+data/dialogue_log.jsonl
+
+# Downloaded base models (~1 GB for Qwen). Re-downloaded automatically on first run.
+models/hf-cache/
+# llama.cpp binaries and converted model files: rebuilt with training/export_gguf.py
+tools/
+models/gguf/
+models/*-merged/
+models/llama-server.log
+
+# Training checkpoints: optimizer/RNG state, not needed to run the model.
+# The final adapters in models/opennpc-lora*/ are kept.
+models/*/checkpoint-*/

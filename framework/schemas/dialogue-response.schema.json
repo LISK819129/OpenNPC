@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/opennpc/opennpc/framework/schemas/dialogue-response.schema.json",
+  "title": "OpenNPC Dialogue Response",
+  "description": "What a dialogue provider returns. Engines must tolerate unknown extra fields.",
+  "type": "object",
+  "required": ["text"],
+  "properties": {
+    "text": { "type": "string", "description": "The line the NPC speaks." },
+    "emotion": {
+      "type": "string",
+      "description": "Suggested delivery. Engines map this to animation/UI; unknown values should fall back to neutral.",
+      "examples": ["neutral", "happy", "annoyed", "sad", "confused", "excited", "suspicious"]
+    },
+    "mood": { "type": "string", "description": "Optional updated mood for the persona after this exchange." },
+    "end_conversation": { "type": "boolean", "description": "True if the NPC wants to leave." }
+  }
+}

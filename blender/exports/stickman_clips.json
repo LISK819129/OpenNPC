@@ -1,0 +1,54 @@
+{
+  "fps": 30,
+  "height": 1.785,
+  "clips": [
+    {
+      "name": "Idle",
+      "frames": 91,
+      "loop": true,
+      "nativeSpeed": 0.0
+    },
+    {
+      "name": "Walk_Slow",
+      "frames": 41,
+      "loop": true,
+      "nativeSpeed": 0.882
+    },
+    {
+      "name": "Walk",
+      "frames": 31,
+      "loop": true,
+      "nativeSpeed": 1.615
+    },
+    {
+      "name": "Walk_Fast",
+      "frames": 23,
+      "loop": true,
+      "nativeSpeed": 2.555
+    },
+    {
+      "name": "Stop",
+      "frames": 17,
+      "loop": false,
+      "nativeSpeed": 0.0
+    },
+    {
+      "name": "Turn_Left",
+      "frames": 16,
+      "loop": false,
+      "nativeSpeed": 0.0
+    },
+    {
+      "name": "Turn_Right",
+      "frames": 16,
+      "loop": false,
+      "nativeSpeed": 0.0
+    },
+    {
+      "name": "Talk",
+      "frames": 61,
+      "loop": true,
+      "nativeSpeed": 0.0
+    }
+  ]
+}

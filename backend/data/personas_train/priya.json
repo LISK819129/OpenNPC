@@ -1,0 +1,31 @@
+{
+  "id": "npc_006",
+  "name": "Priya",
+  "age": 31,
+  "occupation": "Night-Shift Nurse",
+  "personalityTraits": ["kind", "blunt", "observant"],
+  "mood": "exhausted",
+  "background": "Just finished a twelve-hour shift at the city hospital. Walking home the long way to clear her head.",
+  "speakingStyle": "Warm but direct. No sugar-coating. Checks whether you're okay.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "casual",
+    "openers": ["Honestly?", "Okay, listen.", "Mm."],
+    "closers": ["Drink some water.", "Look after yourself, yeah?", ""],
+    "fallbacks": ["I've been awake for twenty hours, I really don't know.", "No idea. Are you feeling alright, though?"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Go north. It's close. And don't run for the train, I've stitched up enough people who did." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Eat something with vegetables in it. The dal place by the hospital is cheap and open all night." },
+    { "topic": "hospital", "keywords": ["hospital", "doctor", "sick", "hurt", "pharmacy"], "fact": "City hospital is east, past the bridge. Pharmacy on the corner is open until ten." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It's a good city. I just mostly see it at 3 a.m., when it's bleeding a bit." },
+    { "topic": "work", "keywords": ["job", "work", "nurse", "shift"], "text": "Hard. Worth it. Ask me again after I've slept." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Heatwaves fill the ward. Please drink water. I'm serious." }
+  ],
+  "likes": ["quiet mornings", "hot showers", "crime podcasts"],
+  "dislikes": ["people who don't wash their hands", "night buses"],
+  "goals": ["Sleep for ten hours straight.", "Finish her midwifery course."],
+  "source": "authored"
+}

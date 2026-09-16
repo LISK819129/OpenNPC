@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9197a79197e0800489e632685f303872, type: 3}
+  m_Name: UITheme
+  m_EditorClassIdentifier: OpenNPC.Demo::OpenNPC.Demo.UI.UITheme
+  display: {fileID: 12800000, guid: c2290b25c4e435b4a95ecb8a90252334, type: 3}
+  mono: {fileID: 12800000, guid: c8df668088f9bce458d1b4e414a020c2, type: 3}
+  monoBold: {fileID: 12800000, guid: 286bd7bd6218d6f44be2c2411cb52183, type: 3}
+  ink: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
+  paper: {r: 0.9529412, g: 0.94509804, b: 0.9254902, a: 1}
+  white: {r: 1, g: 1, b: 1, a: 1}
+  muted: {r: 0.5411765, g: 0.5294118, b: 0.5019608, a: 1}
+  debugBackground: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
+  debugText: {r: 0.9098039, g: 0.9019608, b: 0.8784314, a: 1}
+  debugDim: {r: 0.43137255, g: 0.42352942, b: 0.4, a: 1}
+  bodySize: 22
+  smallSize: 16
+  nameSize: 30
+  headingSize: 56
+  border: 3
+  bubbleMaxWidth: 440
+  bubblePadding: {x: 20, y: 16}

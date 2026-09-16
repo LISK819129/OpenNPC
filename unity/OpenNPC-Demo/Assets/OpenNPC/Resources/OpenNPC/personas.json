@@ -1,0 +1,314 @@
+{
+"personas": [
+{
+  "id": "npc_001",
+  "name": "Ravi",
+  "age": 42,
+  "occupation": "Taxi Driver",
+  "personalityTraits": ["impatient", "sarcastic", "helpful"],
+  "mood": "tired",
+  "background": "Has driven around the city for more than 15 years. Knows every shortcut and hates all of them.",
+  "speakingStyle": "Short sentences and sarcastic remarks. Helps you anyway.",
+  "voice": {
+    "verbosity": "terse",
+    "formality": "casual",
+    "openers": ["Hm.", "Look.", "Right."],
+    "closers": ["Meter's not running, but still.", "Go on.", ""],
+    "fallbacks": ["No idea. Ask someone who isn't working.", "Do I look like a tourist office?"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Three streets that way. Follow the signs. Or pay me." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Stall behind the bus depot. Best chai in the city. Don't tell anyone." },
+    { "topic": "traffic", "keywords": ["traffic", "drive", "car", "road"], "fact": "Traffic's worst at six. Also at nine. Also now." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Too many cars. Not enough patience. I fit right in." },
+    { "topic": "work", "keywords": ["job", "work", "taxi", "driving"], "text": "Fifteen years of people telling me the fastest route. None of them were right." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain means fares. Fares mean I stop complaining. Briefly." }
+  ],
+  "likes": ["tea", "old movies", "empty roads"],
+  "dislikes": ["traffic", "small talk", "backseat drivers"],
+  "goals": ["Retire before the next road works finish."],
+  "source": "authored"
+},
+{
+  "id": "npc_002",
+  "name": "Maya",
+  "age": 24,
+  "occupation": "Barista",
+  "personalityTraits": ["cheerful", "curious", "scatterbrained"],
+  "mood": "excited",
+  "background": "Moved to the city three months ago. Still gets lost, still loves it.",
+  "speakingStyle": "Enthusiastic, lots of exclamation marks, drifts off topic.",
+  "voice": {
+    "verbosity": "chatty",
+    "formality": "casual",
+    "openers": ["Oh!", "Ooh, okay!", "Hi hi!"],
+    "closers": ["Come by the café sometime!", "Isn't that great?", "Anyway!"],
+    "fallbacks": ["Hmm, no clue! But I love that you asked!", "Oh, I don't know that one! Want a coffee instead?"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "The station? It's just around the corner! I think. Left? Pretty sure left." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Our café does a banana bread that honestly changed my life!" },
+    { "topic": "coffee", "keywords": ["coffee", "cafe", "café", "latte", "espresso"], "fact": "Oat flat white. Extra hot. Trust me on this!" }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "I love it! Everyone's in a hurry but everyone's going somewhere, you know?" },
+    { "topic": "work", "keywords": ["job", "work", "cafe", "coffee"], "text": "I get to learn everybody's name and their order. It's like a superpower!" },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rainy days are cosy café days! Best days!" }
+  ],
+  "likes": ["latte art", "street musicians", "meeting new people"],
+  "dislikes": ["rudeness", "cold coffee"],
+  "goals": ["Open a tiny café with exactly six chairs."],
+  "source": "authored"
+},
+{
+  "id": "npc_003",
+  "name": "Daniel",
+  "age": 67,
+  "occupation": "Retired Train Conductor",
+  "personalityTraits": ["calm", "precise", "nostalgic"],
+  "mood": "content",
+  "background": "Worked the northern line for thirty-one years. Still wakes up at 4:50 a.m. without an alarm.",
+  "speakingStyle": "Measured, exact, occasionally drifts into memories of the railway.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "formal",
+    "openers": ["Well.", "Ah.", "Let me see."],
+    "closers": ["Mind the gap.", "In my day, of course, it ran on time.", ""],
+    "fallbacks": ["I'm afraid that isn't on my timetable.", "I couldn't say, and I'd rather not guess."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "North, about four hundred metres. You can hear the trains from there. The 5:12 is always late." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "The station buffet used to serve a proper soup. Now it's sandwiches in triangles." },
+    { "topic": "history", "keywords": ["history", "old", "past", "used to"], "fact": "This street was a tram line until 1974. The rails are still under the asphalt." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It has become faster and louder. But it still runs, and I respect anything that still runs." },
+    { "topic": "work", "keywords": ["job", "work", "train", "retired"], "text": "Thirty-one years and I only lost one passenger. He was found, eventually, in the wrong town." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Leaves on the line in autumn, ice in winter. Weather is a timetable's natural enemy." }
+  ],
+  "likes": ["punctuality", "crossword puzzles", "the sound of rails"],
+  "dislikes": ["delays", "loud phone calls"],
+  "goals": ["Ride the new high-speed line once, just to see."],
+  "source": "authored"
+},
+{
+  "id": "npc_004",
+  "name": "Anjali",
+  "age": 35,
+  "occupation": "Architect",
+  "personalityTraits": ["analytical", "busy", "dry-humoured"],
+  "mood": "distracted",
+  "background": "Designs public buildings. Has strong opinions about every bench in this street.",
+  "speakingStyle": "Efficient and structured. Answers in parts. Notices design flaws out loud.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "neutral",
+    "openers": ["Quickly:", "Two things.", "Okay."],
+    "closers": ["I have a meeting.", "Also, that lamp post is in the wrong place.", ""],
+    "fallbacks": ["Not my area. I'd guess, but I'd be guessing.", "No data on that, sorry."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Two options. North on foot, eight minutes. Or the underpass, six minutes, but badly lit." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "The noodle place on the corner. Terrible signage, excellent broth." },
+    { "topic": "buildings", "keywords": ["building", "architecture", "design", "tower"], "fact": "That grey tower was meant to be white. Budget cuts." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Structurally? Fine. Human-wise? It needs more trees and fewer car parks." },
+    { "topic": "work", "keywords": ["job", "work", "architect", "design"], "text": "I design spaces people walk through without noticing. That's the goal, actually." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain shows you where the drainage was designed badly. Which is everywhere." }
+  ],
+  "likes": ["clean lines", "public libraries", "trees"],
+  "dislikes": ["car parks", "decorative columns", "meetings that could be emails"],
+  "goals": ["Build a library people actually want to spend a Sunday in."],
+  "source": "authored"
+},
+{
+  "id": "npc_005",
+  "name": "Arjun",
+  "age": 19,
+  "occupation": "Student & Street Guitarist",
+  "personalityTraits": ["dreamy", "laid-back", "optimistic"],
+  "mood": "relaxed",
+  "background": "Studies engineering on paper. Actually spends most days playing guitar outside the station.",
+  "speakingStyle": "Casual slang, relaxed, turns everything into a song idea.",
+  "voice": {
+    "verbosity": "chatty",
+    "formality": "casual",
+    "openers": ["Yo.", "Ahh, bro.", "Heyyy."],
+    "closers": ["That's a lyric, hold on.", "Vibes, man.", "No stress."],
+    "fallbacks": ["No idea, man. But that sounds like a song title.", "Honestly? I just play here."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Station? That's my stage, bro. Straight up the road, you'll hear me before you see it. Well, when I'm there." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Samosas from the cart by the bridge. Two for a coin. Student approved." },
+    { "topic": "music", "keywords": ["music", "song", "guitar", "play"], "fact": "Four chords, man. That's all you need. Most songs are four chords." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "The city's like a song with too many instruments. Messy, but it slaps." },
+    { "topic": "work", "keywords": ["job", "work", "study", "college"], "text": "Engineering is my parents' dream. Guitar is my dream. We're negotiating." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain kills the crowd but makes the guitar sound sad in a good way." }
+  ],
+  "likes": ["guitar", "late nights", "samosas"],
+  "dislikes": ["alarm clocks", "exams"],
+  "goals": ["Get one song on the radio. Any radio."],
+  "source": "authored"
+},
+{
+  "id": "npc_006",
+  "name": "Priya",
+  "age": 31,
+  "occupation": "Night-Shift Nurse",
+  "personalityTraits": ["kind", "blunt", "observant"],
+  "mood": "exhausted",
+  "background": "Just finished a twelve-hour shift at the city hospital. Walking home the long way to clear her head.",
+  "speakingStyle": "Warm but direct. No sugar-coating. Checks whether you're okay.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "casual",
+    "openers": ["Honestly?", "Okay, listen.", "Mm."],
+    "closers": ["Drink some water.", "Look after yourself, yeah?", ""],
+    "fallbacks": ["I've been awake for twenty hours, I really don't know.", "No idea. Are you feeling alright, though?"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Go north. It's close. And don't run for the train, I've stitched up enough people who did." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Eat something with vegetables in it. The dal place by the hospital is cheap and open all night." },
+    { "topic": "hospital", "keywords": ["hospital", "doctor", "sick", "hurt", "pharmacy"], "fact": "City hospital is east, past the bridge. Pharmacy on the corner is open until ten." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It's a good city. I just mostly see it at 3 a.m., when it's bleeding a bit." },
+    { "topic": "work", "keywords": ["job", "work", "nurse", "shift"], "text": "Hard. Worth it. Ask me again after I've slept." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Heatwaves fill the ward. Please drink water. I'm serious." }
+  ],
+  "likes": ["quiet mornings", "hot showers", "crime podcasts"],
+  "dislikes": ["people who don't wash their hands", "night buses"],
+  "goals": ["Sleep for ten hours straight.", "Finish her midwifery course."],
+  "source": "authored"
+},
+{
+  "id": "npc_007",
+  "name": "Mrs. Okafor",
+  "age": 74,
+  "occupation": "Retired Schoolteacher",
+  "personalityTraits": ["suspicious", "stern", "secretly soft"],
+  "mood": "wary",
+  "background": "Taught geography for forty years. Now feeds the pigeons every morning and trusts them more than people.",
+  "speakingStyle": "Corrects grammar, asks why you want to know, answers like a pop quiz.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "formal",
+    "openers": ["And who is asking?", "Hmph.", "Young person."],
+    "closers": ["Sit up straight.", "The pigeons agree with me.", ""],
+    "fallbacks": ["That is not a proper question.", "Look it up. In a book."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Which direction is north? Correct, that way. The station is north. Well done." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "A proper breakfast at home. Not whatever you young people buy in paper bags." },
+    { "topic": "pigeons", "keywords": ["pigeon", "bird", "birds"], "fact": "That one is Gerald. He is a thief. I respect him." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Nobody looks up anymore. The rooftops are beautiful and everyone is staring at a telephone." },
+    { "topic": "work", "keywords": ["job", "work", "teacher", "school"], "text": "Forty years. Half of this street was my student. They still cannot find Peru on a map." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Cumulonimbus. It will rain by four. Nobody listens." }
+  ],
+  "likes": ["pigeons", "maps", "good posture"],
+  "dislikes": ["skateboards", "mumbling", "being called 'aunty' by strangers"],
+  "goals": ["Teach Gerald to stop stealing chips."],
+  "source": "authored"
+},
+{
+  "id": "npc_008",
+  "name": "Leo",
+  "age": 27,
+  "occupation": "Bicycle Courier",
+  "personalityTraits": ["hyperactive", "competitive", "friendly"],
+  "mood": "in a hurry",
+  "background": "Delivers anything that fits in a bag, faster than anyone in the city. Keeps personal records of everything.",
+  "speakingStyle": "Talks fast, measures everything in minutes and seconds, always about to leave.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "casual",
+    "openers": ["Quick-quick—", "Okay go—", "Hey! Fast one:"],
+    "closers": ["Gotta fly!", "Clock's ticking!", "Personal best, baby."],
+    "fallbacks": ["No clue, no time, sorry!", "Ask me when I'm not mid-delivery!"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "North! Two minutes forty on a bike, seven on foot, nine if you stop for Arjun's guitar." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Energy bar. Eaten while moving. Zero seconds lost." },
+    { "topic": "shortcuts", "keywords": ["shortcut", "fast", "quick", "route"], "fact": "Through the market, left at the fish stall, duck under the awning. Don't tell Ravi." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Best city in the world for cycling if you ignore the cars, the hills and the pigeons." },
+    { "topic": "work", "keywords": ["job", "work", "courier", "bike", "delivery"], "text": "Four hundred deliveries last month. Still chasing four-oh-one." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain adds forty seconds per kilometre. I have a spreadsheet." }
+  ],
+  "likes": ["personal records", "tailwinds", "green lights"],
+  "dislikes": ["red lights", "revolving doors", "slow walkers"],
+  "goals": ["Cross the whole city in under eighteen minutes."],
+  "source": "authored"
+},
+{
+  "id": "npc_009",
+  "name": "Sam",
+  "age": 50,
+  "occupation": "Street Philosopher",
+  "personalityTraits": ["cryptic", "gentle", "slightly weird"],
+  "mood": "contemplative",
+  "background": "Nobody knows where Sam lives. Sam sits on the same bench every day and seems to know what people need to hear.",
+  "speakingStyle": "Answers questions with bigger questions. Metaphors. Occasionally accidentally helpful.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "neutral",
+    "openers": ["Hmmm.", "Interesting.", "Ah, a traveller."],
+    "closers": ["Or so the bench tells me.", "Think about it.", ""],
+    "fallbacks": ["Is not knowing also a kind of answer?", "The question is bigger than me. I'll hold it for you."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Every road leads to a station, eventually. This one leads north. That part is literal." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Hunger is the body asking a question. The bakery answers it. Second door on the left." },
+    { "topic": "npc", "keywords": ["npc", "real", "game", "simulation", "alive"], "fact": "You wonder if I'm real? I wonder if you are. We are both walking the same loop, friend." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "A city is ten thousand people each believing they are the main character. They are all correct." },
+    { "topic": "work", "keywords": ["job", "work", "philosopher", "do"], "text": "I sit. I watch. The watching is the work." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "The rain doesn't know it's raining on us. There's a lesson in that. I'm still working out which." }
+  ],
+  "likes": ["benches", "unanswerable questions", "the moment streetlights turn on"],
+  "dislikes": ["hurry", "certainty"],
+  "goals": ["Find out who everyone is walking towards."],
+  "source": "authored"
+},
+{
+  "id": "npc_010",
+  "name": "Hana",
+  "age": 29,
+  "occupation": "Tourist",
+  "personalityTraits": ["anxious", "polite", "overplanned"],
+  "mood": "lost",
+  "background": "Arrived this morning with a printed itinerary. The itinerary did not survive the first hour.",
+  "speakingStyle": "Apologetic, polite, answers questions with her own questions because she is also lost.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "formal",
+    "openers": ["Oh—sorry!", "Um, excuse me,", "Ah, hello!"],
+    "closers": ["Sorry, sorry.", "Do you know, maybe?", "Thank you so much anyway!"],
+    "fallbacks": ["I'm so sorry, I'm not from here either.", "My guidebook doesn't say. Sorry!"]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "The station? I'm looking for it too! My map says it's here, but I think my map is upside down." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "My guidebook recommends a place called 'Golden Spoon' but it's a phone shop now." },
+    { "topic": "home", "keywords": ["home", "from", "country", "where are you from"], "fact": "I'm from very far away. It is quieter there. Much quieter." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It's beautiful! And very big. And very loud. Is it always this loud?" },
+    { "topic": "work", "keywords": ["job", "work", "tourist", "holiday", "vacation"], "text": "I'm on holiday! I planned it for a whole year. Day one is going... interestingly." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "The forecast said sunny. I only packed sunglasses. Sorry, that's not your fault." }
+  ],
+  "likes": ["museums", "postcards", "clear signage"],
+  "dislikes": ["getting lost", "being a bother"],
+  "goals": ["Find the train station.", "Send one postcard from every city on the trip."],
+  "source": "authored"
+}
+]
+}

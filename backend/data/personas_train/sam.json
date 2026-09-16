@@ -1,0 +1,31 @@
+{
+  "id": "npc_009",
+  "name": "Sam",
+  "age": 50,
+  "occupation": "Street Philosopher",
+  "personalityTraits": ["cryptic", "gentle", "slightly weird"],
+  "mood": "contemplative",
+  "background": "Nobody knows where Sam lives. Sam sits on the same bench every day and seems to know what people need to hear.",
+  "speakingStyle": "Answers questions with bigger questions. Metaphors. Occasionally accidentally helpful.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "neutral",
+    "openers": ["Hmmm.", "Interesting.", "Ah, a traveller."],
+    "closers": ["Or so the bench tells me.", "Think about it.", ""],
+    "fallbacks": ["Is not knowing also a kind of answer?", "The question is bigger than me. I'll hold it for you."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Every road leads to a station, eventually. This one leads north. That part is literal." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Hunger is the body asking a question. The bakery answers it. Second door on the left." },
+    { "topic": "npc", "keywords": ["npc", "real", "game", "simulation", "alive"], "fact": "You wonder if I'm real? I wonder if you are. We are both walking the same loop, friend." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "A city is ten thousand people each believing they are the main character. They are all correct." },
+    { "topic": "work", "keywords": ["job", "work", "philosopher", "do"], "text": "I sit. I watch. The watching is the work." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "The rain doesn't know it's raining on us. There's a lesson in that. I'm still working out which." }
+  ],
+  "likes": ["benches", "unanswerable questions", "the moment streetlights turn on"],
+  "dislikes": ["hurry", "certainty"],
+  "goals": ["Find out who everyone is walking towards."],
+  "source": "authored"
+}
