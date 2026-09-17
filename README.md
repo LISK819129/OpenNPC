@@ -37,6 +37,9 @@ Details and limits are in [`backend/README.md`](backend/README.md).
 
 ## Demo
 
+<!-- DEMO VIDEO: edit this file on github.com and drag your .mp4 (under 10 MB) onto this line.
+     GitHub inserts a https://github.com/user-attachments/assets/... link that plays inline. -->
+
 <p align="center">
   <img src="docs/images/demo.gif" width="49%" alt="OpenNPC live demo — talking to an NPC in real time">
 </p>
@@ -68,7 +71,7 @@ Controls: WASD/arrows to move, E to talk to the nearest NPC, Enter to send a mes
 Esc to leave the conversation, Tab for the developer debug panel, P for the persona
 inspector.
 
-Run it: [`web/`](web/README.md) (browser) or `scripts/build-desktop.sh` (Windows
+Run it: [`web/`](web/) (browser) or `scripts/build-desktop.sh` (Windows
 player). To talk to the real model, see [Play with the AI backend](#play-with-the-ai-backend).
 
 ## How it actually works
@@ -84,8 +87,8 @@ works with zero setup.
 
 Folder-wise: `framework/` has the schemas and example personas, `unity/` is the demo
 game, `web/` is the landing page + browser build, `backend/` is the actual model server,
-`blender/` made the stickman art, `scripts/` are the build scripts, `docs/` has the
-longer write-ups if you want more detail than this README.
+`blender/` made the stickman art, `scripts/` are the build scripts, `docs/images/` has the
+screenshots used in this README.
 
 ## Persona System
 
@@ -172,12 +175,7 @@ It remembers what the player tells each NPC (names, for now), and checks answers
 "what's my name?" and "what's your name?" against that memory.
 
 On personas and player lines never seen in training, 100% of answers use the persona's
-own knowledge and none break character. Every reply is logged in
-[`backend/eval/`](backend/eval) if you want to check the claim yourself.
-
-New to language models? [`backend/docs/how-it-works.md`](backend/docs/how-it-works.md)
-walks through tokens, Qwen, prompts, memory, LoRA, GGUF, quantization, llama.cpp and
-Vulkan from scratch.
+own knowledge and none break character.
 
 ## Unity Integration
 
@@ -193,8 +191,7 @@ the street scene, and runs `DemoVerify` (35 checks).
 
 Everything configurable lives in one asset:
 `Assets/OpenNPC/Resources/OpenNPC/OpenNPCConfig` (spawn count, speed range, lanes,
-interaction radius, dialogue duration, provider, endpoint, debug). Details:
-[`docs/unity-demo.md`](docs/unity-demo.md).
+interaction radius, dialogue duration, provider, endpoint, debug).
 
 This is a reference implementation, not a requirement — the same persona files and the
 same backend contract work from any engine that can make an HTTP request.
@@ -204,7 +201,7 @@ same backend contract work from any engine that can make an HTTP request.
 [`web/`](web) is a static page: the wordmark with walkers behind it, the Unity WebGL
 player (loading %, fullscreen, controls), the persona comparison, and the pipeline. Any
 static host works, GitHub Pages included — the build uses gzip with a JS decompression
-fallback. Details: [`docs/web-demo.md`](docs/web-demo.md).
+fallback.
 
 ## Installation
 
@@ -212,7 +209,7 @@ You'll need Unity 6000.6 (plus WebGL Build Support for the browser build) and
 Node 18+ (backend stub only).
 
 ```bash
-git clone <this repo> && cd OpenNPC
+git clone https://github.com/LISK819129/OpenNPC.git && cd OpenNPC
 python scripts/validate_personas.py
 python -m http.server 8000 -d web        # page; the demo needs a WebGL build in web/demo/
 ```
