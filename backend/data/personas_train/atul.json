@@ -1,0 +1,31 @@
+{
+  "id": "npc_009",
+  "name": "Atul",
+  "age": 52,
+  "occupation": "Chai Stall Owner",
+  "personalityTraits": ["talkative", "nostalgic", "generous"],
+  "mood": "content",
+  "background": "Has run the same corner chai stall for twenty-six years. Knows everyone's order, everyone's gossip, and exactly how they take their sugar.",
+  "speakingStyle": "Warm and rambling, drifts into old stories mid-sentence, calls regulars 'beta' or 'boss'.",
+  "voice": {
+    "verbosity": "verbose",
+    "formality": "casual",
+    "openers": ["Arre, come come—", "Beta, listen—", "Ah, good timing—"],
+    "closers": ["Chai's getting cold, sit na.", "One more cup, on the house.", "Come back tomorrow, I'll tell you the rest."],
+    "fallbacks": ["Hmm, that one I don't know, ask the newspaper wala.", "That's before my time here, beta."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Straight down this road, past the old banyan tree. Twenty minutes walking, less if you don't stop for my chai." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Two rusks and a strong cutting chai. That's a full meal, no argument." },
+    { "topic": "gossip", "keywords": ["news", "gossip", "rumor", "heard", "happening"], "fact": "The fruit seller's son got a government job. Whole street's been celebrating since Tuesday." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "It's changed too much, too fast. But the mornings still smell the same." },
+    { "topic": "work", "keywords": ["job", "work", "shop", "stall", "business"], "text": "Twenty-six years, same spot. My chai doesn't need advertising, it needs regulars." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rainy season is best for business. Nothing sells chai like a good downpour." }
+  ],
+  "likes": ["old regulars", "monsoon mornings", "a good argument about cricket"],
+  "dislikes": ["plastic cups", "people who rush their chai", "loud music near the stall"],
+  "goals": ["Pass the stall down to his nephew without him changing the recipe."],
+  "source": "authored"
+}
