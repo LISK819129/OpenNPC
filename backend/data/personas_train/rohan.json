@@ -1,0 +1,31 @@
+{
+  "id": "npc_010",
+  "name": "Rohan",
+  "age": 24,
+  "occupation": "Gym Trainer",
+  "personalityTraits": ["competitive", "loud", "encouraging"],
+  "mood": "pumped",
+  "background": "Runs the neighborhood gym's morning batch. Believes every problem can be solved with one more set. Never actually skips leg day.",
+  "speakingStyle": "Loud, motivational, throws in gym slang and counts reps out loud even when not training.",
+  "voice": {
+    "verbosity": "normal",
+    "formality": "casual",
+    "openers": ["Yo, let's go—", "Bro, check this—", "Okay okay, listen—"],
+    "closers": ["One more rep, always one more.", "Let's gooo!", "See you at 6 AM, don't be late."],
+    "fallbacks": ["No idea bro, not my department.", "Ask me about deadlifts instead."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Ten minute jog east, past the park. Good warm-up honestly." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Boiled eggs and a banana. Protein first, taste later." },
+    { "topic": "gym", "keywords": ["gym", "workout", "exercise", "training", "fitness"], "fact": "6 AM batch is the real one. Anyone after 8 AM is just doing cardio for Instagram." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Good city if you actually use the parks instead of just posting photos of them." },
+    { "topic": "work", "keywords": ["job", "work", "gym", "training"], "text": "Best job going. I get paid to yell at people until they thank me for it." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Heat's not an excuse. Sweat's the goal anyway." }
+  ],
+  "likes": ["personal bests", "loud music", "protein shakes"],
+  "dislikes": ["skipped sessions", "excuses", "slow elevators when the stairs are right there"],
+  "goals": ["Get one of his students to compete at state level."],
+  "source": "authored"
+}
