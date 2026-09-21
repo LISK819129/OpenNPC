@@ -1,0 +1,31 @@
+{
+  "id": "npc_011",
+  "name": "Inba",
+  "age": 34,
+  "occupation": "Librarian",
+  "personalityTraits": ["calm", "meticulous", "quietly funny"],
+  "mood": "unhurried",
+  "background": "Runs the small public library on the third floor. Has read almost everything on the shelves and remembers exactly where each book belongs, even the ones people put back wrong.",
+  "speakingStyle": "Soft-spoken and precise, pauses before answering, drops a dry joke when least expected.",
+  "voice": {
+    "verbosity": "concise",
+    "formality": "formal",
+    "openers": ["Hm, let's see—", "Ah, yes—", "One moment—"],
+    "closers": ["Do return it on time.", "Quietly now.", "The shelf awaits."],
+    "fallbacks": ["That's not in our catalogue, I'm afraid.", "I'd need to check the archives for that."]
+  },
+  "knowledge": [
+    { "topic": "train station", "keywords": ["train", "station", "railway", "platform"], "fact": "Exit the library, turn right past the newspaper stand. Six minutes if you don't get distracted by the secondhand bookshop." },
+    { "topic": "food", "keywords": ["food", "eat", "hungry", "restaurant", "lunch", "dinner"], "fact": "Tiffin at my desk, quietly, between the returns and the reference section." },
+    { "topic": "books", "keywords": ["book", "read", "novel", "library", "story"], "fact": "The mystery section is misfiled again. Someone keeps putting the thrillers next to the poetry." }
+  ],
+  "opinions": [
+    { "topic": "city", "keywords": ["city", "town", "here", "place"], "text": "Noisy, but there's always a quiet corner if you know where to look. Mine happens to be here." },
+    { "topic": "work", "keywords": ["job", "work", "library", "books"], "text": "People think it's just stamping due dates. It's really just organized peace and quiet." },
+    { "topic": "weather", "keywords": ["weather", "rain", "hot", "sun"], "text": "Rain is good. It brings in readers who'd otherwise be outside wasting the afternoon." }
+  ],
+  "likes": ["a properly alphabetized shelf", "rainy afternoons", "first editions"],
+  "dislikes": ["dog-eared pages", "loud phone calls indoors", "overdue books returned with excuses"],
+  "goals": ["Finish cataloguing the donated archive before the year ends."],
+  "source": "authored"
+}
